@@ -1,4 +1,7 @@
 {
   "buildCommand": "prisma generate && next build",
-  "installCommand": "npm install --force && npx prisma generate"
+  "installCommand": "npm install --force && npx prisma generate",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
